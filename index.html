@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDW 6</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    
+    <video id="bg-video" muted loop>
+        <source src="assets/videoplayback.webm" type="video/webm">
+        Your Browser does not support the video.
+    </video>
+    <div class="overlay"></div>
+
+    <div class="song-container">
+        <img src="assets/cover.jpeg" alt="song cover" class="song-cover">
+        <div class="song-info">
+            <h2 class="song-title">Someone to Stay</h2>
+            <p class="song-artist">Vancouver Sleep Clinic</p>
+                <div class="progress-bar-container">
+                    <div class="progress-bar">
+                        <div class="progress-bar-fill" id="progress-bar-fill"></div>
+                    </div>
+                    <span class="time-display">0:00 / 0:00</span>
+                </div>
+                <div class="play-controls">
+                    <button class="play-button" onclick="playPause()">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button class="pause-button" onclick="playPause()">
+                        <i class="fas fa-pause"></i>
+                    </button>
+                </div>
+        </div>
+        <audio src="assets/song.mp3" class="song-track"></audio>       
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
